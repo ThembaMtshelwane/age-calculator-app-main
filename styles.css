@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%); /* Off white */
+}
+
+#card {
+  background-color: white;
+  width: 90%;
+  height: 75%;
+  border-radius: 20px 20px 90px 20px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15%;
+}
+
+#top-section {
+  height: 20%;
+  /* border: 2px solid black; */
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#date-form {
+  display: flex;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-container {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.date-label {
+  color: hsl(0, 1%, 44%); /* smokey grey:*/
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.date-input {
+  width: 90%;
+  height: 50%;
+  border: 1px solid hsl(0, 0%, 86%); /* Light grey:*/
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 5px;
+  font-weight: 700;
+}
+
+#middle-section {
+  /* border: 2px solid purple; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+#line-divide {
+  border: 1px solid hsl(0, 0%, 86%);
+  width: 100%;
+  position: absolute;
+  top: 25px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  right: 12px;
+}
+
+#bottom-section {
+  /* border: 2px solid blue; */
+  width: 100%;
+}
+
+#result {
+  /* border: 2px solid blue; */
+  width: 100%;
+  height: 100%;
+}
+
+#result-year,
+#result-month,
+#result-day,
+span {
+  font-size: 3.5rem;
+  /* border: 2px solid purple; */
+  font-style: italic;
+  font-weight: 800;
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}

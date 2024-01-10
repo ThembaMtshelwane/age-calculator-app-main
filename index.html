@@ -10,10 +10,54 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
+    <main>
+      <section id="card">
+        <section id="top-section">
+          <form id="date-form">
+            <section class="date-container">
+              <label class="date-label" for="day">DAY</label>
+              <input id="day-input" class="date-input" type="text" name="day" />
+            </section>
+            <section class="date-container">
+              <label class="date-label" for="day">MONTH</label>
+              <input
+                id="month-input"
+                class="date-input"
+                type="text"
+                name="month"
+              />
+            </section>
+            <section class="date-container">
+              <label class="date-label" for="day">YEAR</label>
+              <input
+                id="year-input"
+                class="date-input"
+                type="text"
+                name="year"
+              />
+            </section>
+          </form>
+        </section>
+        <section id="middle-section">
+          <section id="line-divide"></section>
+          <button>
+            <img src="./assets/images/icon-arrow.svg" alt="" />
+          </button>
+        </section>
+        <section id="bottom-section">
+          <section id="result">
+            <p id="result-year"><span id="add-year">38</span> years</p>
+            <p id="result-month"><span id="add-month">3</span> months</p>
+            <p id="result-day"><span id="add-day">26</span> days</p>
+          </section>
+        </section>
+      </section>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
