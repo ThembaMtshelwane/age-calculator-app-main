@@ -1,4 +1,7 @@
 const form = document.getElementById('date-form')
+const errorMessage = document.getElementById('error-message')
+const inputs = document.querySelectorAll('input')
+const labels = document.querySelectorAll('label')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
@@ -13,8 +16,22 @@ form.addEventListener('submit', (e) => {
     monthValue < 1 ||
     yearValue < 1
   ) {
-    console.log('invalid date')
+    errorMessage.textContent = 'Must be a valid date'
+    inputs.forEach((input) => {
+      input.classList.add('error-state-input')
+    })
+    labels.forEach((label) => {
+      label.classList.add('error-state-label')
+    })
   } else {
+    errorMessage.textContent = ''
+    inputs.forEach((input) => {
+      input.classList.remove('error-state-input')
+    })
+    labels.forEach((label) => {
+      label.classList.remove('error-state-label')
+    })
+
     const currentDate = new Date()
     const inputDate = new Date(yearValue, monthValue, dayValue)
     const { years, months, days } = getDateDifference(currentDate, inputDate)
@@ -28,7 +45,7 @@ form.addEventListener('submit', (e) => {
   }
 })
 
-function getDateDifference (date1, date2) {
+function getDateDifference(date1, date2) {
   const millisecondsInDay = 24 * 60 * 60 * 1000
   const differenceInMilliseconds = Math.abs(date2 - date1)
 
