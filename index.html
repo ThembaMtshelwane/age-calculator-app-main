@@ -11,7 +11,6 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./styles.css" />
-
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
@@ -19,36 +18,44 @@
       <section id="card">
         <section id="top-section">
           <form id="date-form">
-            <section class="date-container">
-              <label class="date-label" for="day">DAY</label>
-              <input id="day-input" class="date-input" type="text" name="day" />
-            </section>
-            <section class="date-container">
-              <label class="date-label" for="day">MONTH</label>
-              <input
-                id="month-input"
-                class="date-input"
-                type="text"
-                name="month"
-              />
-            </section>
-            <section class="date-container">
-              <label class="date-label" for="day">YEAR</label>
-              <input
-                id="year-input"
-                class="date-input"
-                type="text"
-                name="year"
-              />
+            <div>
+              <section class="date-container">
+                <label class="date-label" for="day">DAY</label>
+                <input
+                  id="day-input"
+                  class="date-input"
+                  type="text"
+                  name="day"
+                />
+              </section>
+              <section class="date-container">
+                <label class="date-label" for="day">MONTH</label>
+                <input
+                  id="month-input"
+                  class="date-input"
+                  type="text"
+                  name="month"
+                />
+              </section>
+              <section class="date-container">
+                <label class="date-label" for="day">YEAR</label>
+                <input
+                  id="year-input"
+                  class="date-input"
+                  type="text"
+                  name="year"
+                />
+              </section>
+            </div>
+            <section id="middle-section">
+              <section id="line-divide"></section>
+              <button type="submit">
+                <img src="./assets/images/icon-arrow.svg" alt="" />
+              </button>
             </section>
           </form>
         </section>
-        <section id="middle-section">
-          <section id="line-divide"></section>
-          <button>
-            <img src="./assets/images/icon-arrow.svg" alt="" />
-          </button>
-        </section>
+
         <section id="bottom-section">
           <section id="result">
             <p id="result-year"><span id="add-year">38</span> years</p>
@@ -58,6 +65,8 @@
         </section>
       </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="https://raw.githubusercontent.com/codebox/moment-precise-range/master/moment-precise-range.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
