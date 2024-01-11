@@ -1,0 +1,90 @@
+@media screen and (min-width: 560px) {
+  body,
+  main {
+    background-color: hsl(0, 0%, 94%); /* Off white */
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #card {
+    /* border: 2px solid black; */
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    width: 0%;
+    height: 80%;
+  }
+
+  #top-section {
+    /* border: 2px solid red; */
+    margin: 20px 0px 0px 30px;
+    width: 100%;
+  }
+
+  div {
+    display: flex;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    /* border: 2px solid blue; */
+    margin-bottom: 2px;
+  }
+
+  .date-container {
+    /* border: 2px solid blue; */
+    display: flex;
+    width: 20%;
+  }
+
+  #middle-section {
+    /* border: 2px solid purple; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  button {
+    height: 70px;
+    width: 70px;
+    right: 25px;
+    bottom: 5px;
+  }
+
+  img {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+  }
+
+  #line-divide {
+    border: 1px solid hsl(0, 0%, 86%);
+    width: 90%;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+  }
+
+  #bottom-section {
+    /* border: 2px solid maroon; */
+    margin: 20px 0px 0px 30px;
+    height: 50%;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #card {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #card {
+    width: 50%;
+  }
+}
