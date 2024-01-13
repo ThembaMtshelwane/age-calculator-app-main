@@ -84,7 +84,7 @@ div {
 
 .error-state-label {
   color: hsl(0, 100%, 67%);
-  letter-spacing: 2px; /* Adjust the value as needed */
+  letter-spacing: 2px;
 }
 
 #middle-section {
@@ -95,7 +95,6 @@ div {
   align-items: center;
   position: relative;
   margin-top: 10px;
-  /* margin-bottom: 5px 0 50px 0; */
 }
 
 #line-divide {
