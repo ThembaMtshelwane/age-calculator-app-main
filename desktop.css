@@ -11,8 +11,8 @@
     background-color: white;
     margin: auto;
     padding: 15px;
-    height: 45%;
     width: 70%;
+    height: 350px;
   }
 
   #top-section {
@@ -79,13 +79,7 @@
 
 @media screen and (min-width: 640px) {
   #card {
-    width: 350px;
-    height: 50%;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  #card {
-    width: 400px;
+    width: 450px;
+    height: 350px;
   }
 }
